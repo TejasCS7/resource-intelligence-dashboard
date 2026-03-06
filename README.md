@@ -36,7 +36,7 @@
 
 The application is structured around a clean, modular backend with clearly separated responsibilities — an ingestion layer, a database layer, an analytics/computation engine, and a web presentation layer. Users can explore spending trends, investigate anomalies flagged by the backend engine, and run what-if simulations to model the financial impact of infrastructure changes — all through a responsive browser interface.
 
-### Why This Is a Software Engineering Project
+### Why How the System Is Engineered
 
 | Concern | Implementation |
 |---|---|
