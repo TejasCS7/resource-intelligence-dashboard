@@ -60,31 +60,31 @@ The application follows a layered backend architecture — each layer has a sing
 │  code4_finops_dashboard.py + main.py                │
 │  ├── Route handlers (GET/POST endpoints)            │
 │  ├── Jinja2 template rendering                      │
-│  └── JSON API responses for dynamic chart updates  │
+│  └── JSON API responses for dynamic chart updates   │
 └───────────────────────┬─────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────┐
 │              ANALYTICS ENGINE LAYER                 │
 │  code3_cost_analysis.py                             │
-│  ├── Anomaly detection (statistical thresholding)  │
-│  ├── Time-series forecasting (3-month projection)  │
-│  └── What-if scenario computation engine           │
+│  ├── Anomaly detection (statistical thresholding)   │
+│  ├── Time-series forecasting (3-month projection)   │
+│  └── What-if scenario computation engine            │
 └───────────────────────┬─────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────┐
 │               DATABASE LAYER (PostgreSQL)           │
 │  code2_database_setup.py                            │
-│  ├── Schema creation and table management          │
-│  ├── SQL aggregation queries (GROUP BY, CTEs)      │
-│  └── psycopg2 connection management                │
+│  ├── Schema creation and table management           │
+│  ├── SQL aggregation queries (GROUP BY, CTEs)       │
+│  └── psycopg2 connection management                 │
 └───────────────────────┬─────────────────────────────┘
                         │
 ┌───────────────────────▼─────────────────────────────┐
 │              INGESTION LAYER (Python)               │
 │  code1_data_ingestion.py                            │
-│  ├── CSV parsing and schema validation             │
-│  ├── Data cleaning and type normalization          │
-│  └── Bulk INSERT into PostgreSQL                   │
+│  ├── CSV parsing and schema validation              │
+│  ├── Data cleaning and type normalization           │
+│  └── Bulk INSERT into PostgreSQL                    │
 └─────────────────────────────────────────────────────┘
         ▲
         │
